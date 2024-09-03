@@ -1,0 +1,189 @@
+.landing-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 0; /* Adjusted for mobile */
+    width: 100%; /* Ensure it fits within the screen */
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 100%; /* Full width on mobile */
+    background-color: #272727;
+    color: white;
+}
+
+.search-icon {
+    color: #f50057;
+    margin-left: -30px;
+}
+
+.nav-links {
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px; /* Adjusted font size for mobile */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column; /* Stack content on mobile */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center; /* Center text for mobile */
+    flex: 1;
+}
+
+.text-content {
+    max-width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Space below the text */
+}
+
+.text-content h1 {
+    font-size: 36px; /* Adjusted font size for mobile */
+    margin: 0;
+    text-align: left; /* Left align the heading */
+    padding-left: 20px; /* Add padding for indentation */
+}
+
+.music-gradient {
+    background: linear-gradient(to right, rgb(182, 182, 192), #f00, #ff00ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.to-my-ears {
+    background: linear-gradient(to right, #ff00ff, #f00, rgb(65, 39, 65));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text-content p {
+    margin: 20px 0;
+    text-align: left; /* Left align the paragraph */
+    padding-left: 20px; /* Add padding for indentation */
+}
+
+.button-group {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 20px; /* Add padding for indentation */
+}
+
+.discover-btn, .create-btn {
+    padding: 10px 20px;
+    margin-right: 0;
+    margin-bottom: 10px; /* Add margin between buttons on mobile */
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.discover-btn {
+    background: linear-gradient(to right, #f50057, #d500f9);
+    color: white;
+    width: 100%; /* Full width on mobile */
+    margin-right: 20px;
+}
+
+.create-btn {
+    background: none;
+    color: white;
+    border: 2px solid #f50057;
+    width: 100%; /* Full width on mobile */
+}
+
+.image-content img {
+    width: 100%; /* Adjust image to fit mobile screen */
+    margin-right: 0;
+    border-radius: 20px; /* Adjusted for mobile */
+}
+
+@media (min-width: 768px) {
+    /* Styles for larger screens */
+    .landing-page {
+        margin-left: -230px;
+        margin-top: -30px;
+    }
+
+    .navbar {
+        padding: 20px 50px;
+    }
+
+    .search-bar {
+        margin-left: 150px;
+        width: auto;
+    }
+
+    .search-bar input {
+        width: 500px;
+    }
+
+    .main-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .text-content {
+        max-width: 50%;
+        margin-bottom: 0;
+    }
+
+    .text-content h1 {
+        font-size: 48px;
+    }
+
+    .text-content p {
+        text-align: left;
+        margin-left: 70px;
+        padding-left: 0; /* Remove padding for desktop */
+    }
+
+    .button-group {
+        margin-left: 70px;
+        text-align: left;
+        padding-left: 0; /* Remove padding for desktop */
+    }
+
+    .discover-btn, .create-btn {
+        width: auto;
+    }
+
+    .image-content img {
+        width: 600px;
+        margin-right: -70px;
+        border-radius: 200px;
+    }
+    
+    .image-content {
+        margin-left: 130px;
+    }
+}
